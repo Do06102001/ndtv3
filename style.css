@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600&display=swap');
+
+:root{
+	--primary-color: #f2726a;
+	--pink-color: #e26e70;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	background-size: 1600px 800px;
+	overflow: hidden;
+	background-image: url(https://afamilycdn.com/150157425591193600/2021/12/6/20-y-tuong-trang-tri-cay-thong-noel-trong-nha-don-gian-nhung-van-dep-mat-an-tuong-202010112246371660-1638729639378526602141-0-0-471-754-crop-16387296467391229898277.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "poppons";
+	color: white;
+}
+
+.card{
+	
+	width: 400px;
+	height: 450px;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 50px;
+}
+
+img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+.card__img{
+	width: 120px;
+	height: 120px;
+	border: 4px solid gray;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	transform: translateY(25px);
+	transition: 0.5s;
+}
+
+.card h2 {
+	margin-top: 50px;
+}
+
+
+.card__social{
+	margin: 25px 0;
+}
+
+.card__social a{
+	color: #27408B;
+	font-size: 40px;
+}
+
+.card__social a:hove{
+	color: #f2726a;
+}
+
+
+.card__img:hover{
+	width: 100%;
+	height: 100%;
+	border-radius: unset;
+	transform: unset;
+	border: none;
+}
+
+.open-modal-btn{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	position: relative;
+}
+
+.open-format-ntd{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	position: relative;
+}
+
+.open-method-vtv{
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	position: relative;
+}
+
+.open-sticker-and{
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	position: relative;
+}
+
+.open-stick-you{
+	background: var(--pink-color);
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	position: relative;
+}
+
+.open-memory-taq{
+	background: var(--pink-color);
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	position: relative;
+}
+
+.open-mentos-tdt{
+	background: var(--pink-color);
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	position: relative;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.format{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.method{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.stick{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.memory{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.mentos{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 400px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.modal__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.format__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.method__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.stick__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.memory__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.mentos__inner{
+	position: relative;
+	top: 0;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: modalShow 0.2s linear;
+}
+
+.modal__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.format__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.method__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.stick__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.memory__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.mentos__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: var(--pink-color);
+	color: white;
+}
+
+.modal__body{
+	padding: 15px;
+	color: black;
+}
+
+.format__body{
+	padding: 15px;
+	color: black;
+}
+
+.method__body{
+	padding: 15px;
+	color: black;
+}
+
+.stick__body{
+	padding: 15px;
+	color: black;
+}
+
+.memory__body{
+	padding: 15px;
+	color: black;
+}
+
+.mentos__body{
+	padding: 15px;
+	color: black;
+}
+
+.modal__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.format__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.method__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.stick__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.memory__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.mentos__body h3{
+	color: var(--pink-color);
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+
+
+.modal__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.format__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.method__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.stick__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.memory__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.mentos__footer{
+	padding: 15px;
+	text-align: right;
+}
+
+.modal__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.format__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.method__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.stick__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.memory__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.mentos__footer button{
+	padding: 10px 20px;
+	color: white;
+	background: var(--pink-color);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+p{
+	font-size: 20px;
+}
+
+.hide{
+	display: none;
+}
+
+@keyframes modalShow{
+	from{
+		top: -200px;
+		opacity: 0;
+	}
+
+	to{
+		top: 50%;
+		opacity: 1;
+	}
+}
